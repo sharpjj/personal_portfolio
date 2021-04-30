@@ -8,14 +8,14 @@ document.getElementById('home').addEventListener('mouseout', function(){
     document.getElementById('home').style.backgroundColor = '#2F4858';
 });
 
-document.getElementById('about').addEventListener('mouseover', function(){
-    document.getElementById('about').style.color = '#2F4858';
-    document.getElementById('about').style.backgroundColor = 'white';
+document.getElementById('aboutme').addEventListener('mouseover', function(){
+    document.getElementById('aboutme').style.color = '#2F4858';
+    document.getElementById('aboutme').style.backgroundColor = 'white';
 });
 
-document.getElementById('about').addEventListener('mouseout', function(){
-document.getElementById('about').style.color = 'white';
-document.getElementById('about').style.backgroundColor = '#2F4858';
+document.getElementById('aboutme').addEventListener('mouseout', function(){
+document.getElementById('aboutme').style.color = 'white';
+document.getElementById('aboutme').style.backgroundColor = '#2F4858';
 });
 
 
