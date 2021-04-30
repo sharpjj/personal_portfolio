@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+
+
+
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #FCFAFA;
+    font-size: 32px;
+    background-color: #ACBEA3;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+h1 {
+   font-family: 'Lobster Two', cursive;
+   font-size: 1rem; 
+   position:fixed;
+   color: #FCFAFA;
+   z-index: 9999;
+   align-self: center;
+   left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    color: #FCFAFA;
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    background-color: #2F4858;
+    height: 120px;
+    border-bottom: solid 2px cornsilk;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ nav li {
+    list-style: none;
+    color: #FCFAFA;
+    font-size: 0.5rem;
+    padding: 0 10px;
+    border-radius: 5px;
+ }
+
+
+main {
+    margin-top: 25px;
+    display: grid;
+    grid-gap: 10px;
+    width: 100%;
+    grid-template-rows: repeat(12, 150px);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+ .logo {
+     flex-grow: 1;
+     height: 100px;
+     display: flex;
+     align-items:center;
+     
+     
+ }
+
+ .logo img {
+     height: 75px;
+     width: auto;
+
+
+ }
+
+ .about {
+     background-color: #104F55;
+     grid-area: 1 / 5 / 4 / 13;
+     border-radius: 15px;
+
+ }
+
+ .info {
+     height: 100px;
+     width: 100%;
+     color: #FCFAFA;
+     padding-top: 75px;
+ }
+
+
+.info p {
+    margin: 0 50px;
+}
+
+
+
+.languages {
+    background-color: #9C6615;
+    grid-area: 1 / 1 / 4 / 5;
+    border-radius: 15px;
+
+}
+
+.languages img {
+    height: 100px;
+    width: auto;    
+}
+
+
+ .previousProjects {
+     grid-area: 4 / 2 / 9 / 12;
+     margin: 50px 0;
+     border-radius: 15px;
+     background-color: #533B4D;
+ }
+
+ figcaption {
+     color: black;
+ }
+
+.projectCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: slategrey;
+}
+
+ .projects {
+     height: 250px;
+     width: auto;
+     margin: 25px;
+ }
+
+ .projects img {
+     height: 100%;
+ }
+
+ .projects figcaption {
+     position: relative;
+     top: -50%;
+     background-color: white;
+     color: black;
+     opacity: 0.7;
+
+ }
+
+
+ .contact {
+     grid-area: 9 / 3 / 13 / 11;
+     height: 300px;
+     width: 100%;
+ }
+
+ .contactCont {
+     background-color: slategrey;
+     width: 300px;
+     margin: 0 auto;
+     padding: 15px;
+     border-radius: 15px;
+ }
+
+ @media screen and (max-width: 1300px) {
+    main {
+        grid-template-rows: repeat(15, 150px);
+    }
+
+
+     .logo {
+         visibility: hidden;
+     }
+
+     
+     h1 {
+         left: 0;
+         float: left;
+         margin-left: 120px;
+     }
+
+     .about {
+        grid-area: 1 / 1 / 4 / 13;
+    }
+
+    .languages {
+        grid-area: 4 / 1 / 6 / 13;
+    }
+
+    .previousProjects {
+        grid-area: 6 / 2 / 12 / 12;
+        margin: 50px 0;
+        border-radius: 15px;
+        background-color: #533B4D;
+    }
+
+    .contact {
+        grid-area: 12 / 3 / 15 / 11;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    }
